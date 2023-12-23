@@ -20,7 +20,7 @@ export class AppComponent {
     this.shopping_list.unshift(this.item_to_add);
   }
 
-  delete(index:any){
+  remove(index:any){
     this.shopping_list.splice(index, 1);
   }
 }
