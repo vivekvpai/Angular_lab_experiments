@@ -8,29 +8,29 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'program_4';
 
-  inputNumber = '';
-  factorialResult = '';
-  squareResult = '';
+  input_number = '';
+  factorial_result = '';
+  square_result = '';
 
   calculateFactorial() {
-    const number = parseInt(this.inputNumber);
+    const number = parseInt(this.input_number);
     if (Number.isInteger(number) && number >= 0) {
       let result = 1;
       for (let i = 2; i <= number; i++) {
         result *= i;
       }
-      this.factorialResult = result.toString();
+      this.factorial_result = result.toString();
     } else {
-      this.factorialResult = 'Invalid input';
+      this.factorial_result = 'Invalid input';
     }
   }
 
   calculateSquare() {
-    const number = parseFloat(this.inputNumber);
+    const number = parseFloat(this.input_number);
     if (!isNaN(number)) {
-      this.squareResult = (number * number).toString();
+      this.square_result = (number * number).toString();
     } else {
-      this.squareResult = 'Invalid input';
+      this.square_result = 'Invalid input';
     }
   }
 }
