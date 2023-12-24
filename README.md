@@ -1,6 +1,6 @@
 Repository contains the program files of angular 21CSL581/ 21CBL583
 
-Sl.NO Experiments
+Experiments / Lab Programs
 
 1. Develop Angular JS program that allows user to input their first name and last name and display their full name and email address
 Note: The default values for first name and last name may be included in the program.
