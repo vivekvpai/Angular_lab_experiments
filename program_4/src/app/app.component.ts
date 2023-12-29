@@ -8,9 +8,9 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'program_4';
 
-  input_number = '';
-  factorial_result = '';
-  square_result = '';
+  input_number:any = '';
+  factorial_result:any = '';
+  square_result:any = '';
 
   calculateFactorial() {
     const number = parseInt(this.input_number);
