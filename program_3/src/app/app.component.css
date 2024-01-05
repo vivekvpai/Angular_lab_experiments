@@ -1,3 +1,7 @@
+.container-box {
+  margin: 25px 25px 25px 25px;
+}
+
 .btn-round {
   background-color: rgb(230, 230, 230);
   border-radius: 100%;
@@ -12,6 +16,28 @@
   width: 5rem;
 }
 
-.card {
+.cal-card {
   background-color: rgb(221, 241, 250);
+  width: 60%;
+  margin: auto;
+}
+
+.input-group {
+  padding: 25px 25px 25px 25px;
+}
+.form-label {
+  margin-right: 25px;
+}
+
+input {
+  width: 50%;
+}
+
+.cal-buttons {
+  display: flex;
+  justify-content: space-around;
+}
+
+.result {
+  padding: 25px 25px 25px 25px;
 }
