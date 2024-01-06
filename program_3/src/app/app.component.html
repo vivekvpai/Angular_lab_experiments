@@ -27,30 +27,12 @@
       />
     </div>
 
-    <div class="cal-buttons" >
-
-
-    <button class="btn-round">
-      <span class="material-symbols-outlined" (click)="get_result('add')">
-        add
-      </span>
-    </button>
-    <button class="btn-round">
-      <span class="material-symbols-outlined" (click)="get_result('sub')">
-        remove
-      </span>
-    </button>
-    <button class="btn-round">
-      <span class="material-symbols-outlined" (click)="get_result('multiply')">
-        close
-      </span>
-    </button>
-    <button class="btn-round">
-      <span class="material-symbols-outlined" (click)="get_result('divide')">
-        percent
-      </span>
-    </button>
-  </div>
+    <div class="cal-buttons">
+      <button class="btn-round" (click)="get_result('add')">add</button>
+      <button class="btn-round" (click)="get_result('sub')">sub</button>
+      <button class="btn-round" (click)="get_result('multiply')">Mul</button>
+      <button class="btn-round" (click)="get_result('divide')">Div</button>
+    </div>
 
     <div class="result">
       <h3>Result : {{ result }}</h3>
