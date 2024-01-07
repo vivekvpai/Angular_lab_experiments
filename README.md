@@ -29,3 +29,22 @@ Experiments / Lab Programs
     Note: The default details of students may be included in the program.
 
 12. Create an AngularJS application that displays the date by using date filter parameters
+
+---------------------------------------------------------------------------------------------------
+
+In observation and record only 4 files code should be written that is 
+1. App.module.ts
+2. App.component.html
+3. App.component.css
+4. App.component.ts
+Please only 4 files are to be written
+
+Order of the observation and record are 
+1. Title of the program
+2. Command to create a angular application ( ng new pg_1 )
+3. Command to run the application ( ng serve )
+4. App.module.ts - file code
+5. App.component.html - file code
+6. App.component.css - file code
+7. App.component.ts - file code
+Please note the order must be same especially for the file code
