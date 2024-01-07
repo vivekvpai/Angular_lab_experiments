@@ -1,65 +1,39 @@
-<div class="container">
-  <div class="row justify-content-center">
-    <div class="col-12">
-      <h1 class="text-center mt-5">
-        P1. Program that allows user to input their first name and last name and
-        display their full name.
-      </h1>
+<div class="container-box">
+  <h1 class="">
+    P1. Program that allows user to input their first name and last name and
+    display their full name.
+  </h1>
+
+  <form action="" class="form-section" [formGroup]="form" (ngSubmit)="submit()">
+    <label for="first_name" class="label-section">First Name</label>
+    <input
+      type="text"
+      class="input-section"
+      formControlName="first_name"
+      placeholder="Enter First Name"
+    />
+
+    <label for="first_name" class="label-section">Last Name</label>
+    <input
+      type="text"
+      class="input-section"
+      formControlName="last_name"
+      placeholder="Enter Last Name"
+    />
+
+    <div class="aleart-section" *ngIf="alert">
+      <p>ERROR: Please fill all felids of form</p>
     </div>
-    <div class="row justify-content-center">
-      <div class="col-8 card mt-5">
-        <form
-          action=""
-          class="card-body"
-          [formGroup]="form"
-          (ngSubmit)="submit()"
-        >
-          <div class="row">
-            <div class="col-4 my-3">
-              <label for="first_name" class="form-label">First Name</label>
-            </div>
-            <div class="col-8 my-3">
-              <input
-                type="text"
-                class="form-control"
-                formControlName="first_name"
-                placeholder="Enter First Name"
-              />
-            </div>
 
-            <div class="col-4 my-3">
-              <label for="first_name" class="form-label">Last Name</label>
-            </div>
-            <div class="col-8 my-3">
-              <input
-                type="text"
-                class="form-control"
-                formControlName="last_name"
-                placeholder="Enter Last Name"
-              />
-            </div>
+    <button class="btn-section">Submit</button>
+  </form>
 
-            <div class="" *ngIf="alert">
-              <ngb-alert type="danger" (closed)="alert = false"
-                >Enter the First name and Last Name</ngb-alert
-              >
-            </div>
-
-            <div class="text-end">
-              <button class="btn btn-primary">Submit</button>
-            </div>
-          </div>
-        </form>
-
-        <h3>
-          Entered Name :
-          {{ form.value.first_name + " " + form.value.last_name }}
-        </h3>
-        <h3 *ngIf="first_name && last_name">
-          Entered Name After Submit :
-          {{ first_name + " " + last_name }}
-        </h3>
-      </div>
-    </div>
-  </div>
+  <h3>
+    Entered Name :
+    {{ form.value.first_name + " " + form.value.last_name }}
+  </h3>
+  <h3 *ngIf="first_name && last_name">
+    Entered Name After Submit :
+    {{ first_name + " " + last_name }}
+  </h3>
 </div>
