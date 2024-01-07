@@ -1,0 +1,21 @@
+.container-section {
+  margin: 25px 25px 25px 25px;
+}
+
+.card-section {
+  padding: 25px 25px 25px 25px;
+}
+
+.btn-section {
+  background-color: black;
+  color: white;
+  padding: 5px 5px 5px 5px;
+}
+
+.label-section {
+  margin: 25px 25px 25px 25px;
+}
+
+.input-section {
+  margin: 25px 25px 25px 25px;
+}

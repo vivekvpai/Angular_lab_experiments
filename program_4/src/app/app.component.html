@@ -1,40 +1,29 @@
-<div class="container">
-  <div class="row">
-    <div class="col-12">
-      <h1 class="text-center">
-        Write an Angular JS application that can calculate factorial and compute
-        square based on given user input.
-      </h1>
-    </div>
-  </div>
+<div class="container-section">
+  <h1 class="">
+    Write an Angular JS application that can calculate factorial and compute
+    square based on given user input.
+  </h1>
 
-  <div class="row justify-content-center mt-5">
-    <div class="col-6 card">
-      <div class="card-body">
-        <div class="row">
-          <div class="col-3 my-3">
-            <label for="" class="form-label">Enter Number </label>
-          </div>
-          <div class="col-9 my-3">
-            <input
-              type="text"
-              [(ngModel)]="input_number"
-              placeholder="Enter a number"
-              class="form-control"
-            />
-          </div>
-        </div>
+  <div class="card-section">
+    <label for="" class="label-section">Enter Number </label>
 
-        <button class="btn btn-primary my-3" (click)="calculateFactorial()">
-          Calculate Factorial
-        </button>
-        <p>Factorial: {{ factorial_result }}</p>
+    <input
+      type="number"
+      class="input-section"
+      [(ngModel)]="input_number"
+      placeholder="Enter a number"
+    />
 
-        <button class="btn btn-primary my-3" (click)="calculateSquare()">
-          Calculate Square
-        </button>
-        <p>Square: {{ square_result }}</p>
-      </div>
+    <div>
+      <button class="btn-section" (click)="calculateFactorial()">
+        Calculate Factorial
+      </button>
+      <p>Factorial: {{ factorial_result }}</p>
+
+      <button class="btn-section" (click)="calculateSquare()">
+        Calculate Square
+      </button>
+      <p>Square: {{ square_result }}</p>
     </div>
   </div>
 </div>
