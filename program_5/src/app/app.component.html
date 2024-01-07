@@ -1,60 +1,56 @@
-<section class="container">
-  <div class="row">
-    <div class="col-12">
-      <h3 class="text-center mt-3">
-        Program 5. Develop AngularJS application that displays a details of
-        students and their CGPA. Allow users to read the number of students and
-        display the count. Note: Student details may be included in the program.
-      </h3>
-    </div>
+<section class="container-section">
+  <h3 class="">
+    Program 5. Develop AngularJS application that displays a details of students
+    and their CGPA. Allow users to read the number of students and display the
+    count. Note: Student details may be included in the program.
+  </h3>
 
-    <h3 class="mt-5">Student details</h3>
-    <p class="fs-4" >Total no of students: {{ student_list.length }}</p>
+  <div class="count-section">
+    <h3 class="  ">Student details</h3>
+    <p class="counter">Total no of students: {{ student_list.length }}</p>
+  </div>
 
-    <div class="col-4 mt-3" *ngFor="let item of student_list">
-      <div class="card">
-        <div class="card-header fs-5 d-flex justify-content-between">
-          <div>
-            {{ item.name }}
-          </div>
-          <div>
-            CGPA :
-            <span class="text-info fw-bold fs-5"> {{ get_cgpa(item) }} </span>
-          </div>
+  <div class="display-section">
+    <div class="display-card" *ngFor="let item of student_list">
+      <div class="header">
+        {{ item.name }}
+
+        CGPA :
+        <span class="cgpa"> {{ get_cgpa(item) }} </span>
+      </div>
+
+      <div class="marks-section">
+        <div class="view-section">
+          semester : 1 -
+          <span class="sem-name"> {{ item.semester_1 }} </span>
         </div>
-        <div class="card-body row">
-          <div class="col-6">
-            semester : 1 -
-            <span class="text-info fw-bold fs-5"> {{ item.semester_1 }} </span>
-          </div>
-          <div class="col-6">
-            semester : 2 -
-            <span class="text-info fw-bold fs-5"> {{ item.semester_2 }} </span>
-          </div>
-          <div class="col-6">
-            semester : 3 -
-            <span class="text-info fw-bold fs-5"> {{ item.semester_3 }} </span>
-          </div>
-          <div class="col-6">
-            semester : 4 -
-            <span class="text-info fw-bold fs-5"> {{ item.semester_4 }} </span>
-          </div>
-          <div class="col-6">
-            semester : 5 -
-            <span class="text-info fw-bold fs-5"> {{ item.semester_5 }} </span>
-          </div>
-          <div class="col-6">
-            semester : 6 -
-            <span class="text-info fw-bold fs-5"> {{ item.semester_6 }} </span>
-          </div>
-          <div class="col-6">
-            semester : 7 -
-            <span class="text-info fw-bold fs-5"> {{ item.semester_7 }} </span>
-          </div>
-          <div class="col-6">
-            semester : 8 -
-            <span class="text-info fw-bold fs-5"> {{ item.semester_8 }} </span>
-          </div>
+        <div class="view-section">
+          semester : 2 -
+          <span class="sem-name"> {{ item.semester_2 }} </span>
+        </div>
+        <div class="view-section">
+          semester : 3 -
+          <span class="sem-name"> {{ item.semester_3 }} </span>
+        </div>
+        <div class="view-section">
+          semester : 4 -
+          <span class="sem-name"> {{ item.semester_4 }} </span>
+        </div>
+        <div class="view-section">
+          semester : 5 -
+          <span class="sem-name"> {{ item.semester_5 }} </span>
+        </div>
+        <div class="view-section">
+          semester : 6 -
+          <span class="sem-name"> {{ item.semester_6 }} </span>
+        </div>
+        <div class="view-section">
+          semester : 7 -
+          <span class="sem-name"> {{ item.semester_7 }} </span>
+        </div>
+        <div class="view-section">
+          semester : 8 -
+          <span class="sem-name"> {{ item.semester_8 }} </span>
         </div>
       </div>
     </div>
