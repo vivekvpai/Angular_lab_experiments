@@ -1,0 +1,31 @@
+.container-box {
+    margin: 25px 25px 25px 25px;
+  }
+  
+  .form-section {
+    background-color: rgb(196, 238, 248);
+    margin-top: 25px;
+    padding: 25px 25px 25px 25px;
+    width: 80%;
+  }
+  
+  .aleart-section {
+    background-color: red;
+    color: white;
+    height: 25px;
+    padding: 25px 25px 25px 25px;
+    margin: 25px 0px 25px 0px;
+  }
+  
+  .btn-section {
+    background-color: black;
+    color: white;
+  }
+  
+  .input-section {
+    margin: 25px 25px 25px 25px;
+  }
+  .label-section {
+    margin: 25px 25px 25px 25px;
+  }
+  
