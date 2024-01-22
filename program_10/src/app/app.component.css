@@ -1,0 +1,28 @@
+.container-box {
+  margin: 20px 20px 20px 20px;
+}
+
+.counter {
+  background-color: black;
+  color: white;
+  padding: 25px 25px 25px 25px;
+}
+
+.items-section {
+  margin: 20px 20px 20px 20px;
+  display: inline-flex;
+}
+
+.button {
+  background-color: rgb(0, 0, 0);
+  padding: 10px 10px 10px 10px;
+  color: white;
+  border-radius: 10px;
+}
+
+table {
+  margin-top: 50px;
+  width: 100%;
+  text-align: center;
+}
+
