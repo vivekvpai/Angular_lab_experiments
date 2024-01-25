@@ -5,17 +5,17 @@
   </h1>
 
   <form action="" class="form-section" [formGroup]="form" (ngSubmit)="submit()">
-    <label for="user_name" class="label-section">First Name</label>
+    <label for="user_name" class="label-section"> Name</label>
     <input
       type="text"
       class="input-section"
       formControlName="user_name"
-      placeholder="Enter First Name"
+      placeholder="Enter  Name"
     />
 
-    <label for="user_name" class="label-section">Last Name</label>
+    <label for="user_name" class="label-section">Password</label>
     <input
-      type="text"
+      type="password"
       class="input-section"
       formControlName="password"
       placeholder="Enter Last Name"
@@ -25,6 +25,6 @@
       <p>{{ error }}</p>
     </div>
 
-    <button class="btn-section">Submit</button>
+    <button class="btn-section" type="submit">Submit</button>
   </form>
 </div>

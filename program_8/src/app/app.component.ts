@@ -11,8 +11,7 @@ export class AppComponent {
 
   form: FormGroup = new FormGroup({});
 
-  user_name: any = '';
-  password: any = '';
+
 
   alert: boolean = false;
 
@@ -29,8 +28,7 @@ export class AppComponent {
     if (this.form.invalid) {
       console.log('ERROR');
       this.alert = true;
-      this.user_name = '';
-      this.password = '';
+    
       this.error = 'Enter User name and password';
     } else if (
       this.form.value.user_name !== 'Admin' &&
@@ -43,8 +41,7 @@ export class AppComponent {
       this.error = 'Login successful';
 
       console.log(this.form.value);
-      this.user_name = this.form.value.user_name;
-      this.password = this.form.value.password;
+  
     }
   }
 }
