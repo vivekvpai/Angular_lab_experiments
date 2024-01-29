@@ -30,7 +30,7 @@ Experiments / Lab Programs
 
 12. Create an AngularJS application that displays the date by using date filter parameters
 
----
+-------
 
 In observation and record only 4 files code should be written that is
 
