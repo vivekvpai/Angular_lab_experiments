@@ -32,7 +32,7 @@ Experiments / Lab Programs
 
 -----------------------------------------------------------------------------------------------
 
-In observation and record only 4 files code should be written that is
+In observation and record only 4 files code should be written that is:
 
 1. App.module.ts
 2. App.component.html
@@ -40,7 +40,7 @@ In observation and record only 4 files code should be written that is
 4. App.component.ts
    Please only 4 files are to be written
 
-Order of the observation and record are
+Order of the observation and record are as follows:
 
 1. Title of the program
 2. Command to create a angular application ( ng new pg_1 )
