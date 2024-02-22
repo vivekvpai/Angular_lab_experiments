@@ -1,0 +1,60 @@
+<div class="container-box">
+  <h1 class="">
+    Develop an AngularJS program to create a simple to-do list application.
+    Allow users to add, edit, and delete tasks. Note: The default values for
+    tasks may be included in the program.
+  </h1>
+
+  <div class="items-section">
+    <div class="">
+      <label class="input-section" for="">Item Name :</label>
+      <input
+        class="input-section"
+        type="text"
+        [(ngModel)]="item_to_add.to_do"
+        class="input-feilds"
+      />
+    </div>
+
+    <div class="">
+      <button class="button" (click)="add()">Add</button>
+    </div>
+  </div>
+
+  <table class="">
+    <thead>
+      <tr>
+        <th>#</th>
+        <th>User</th>
+        <th>Action</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let item of to_do_list; index as i">
+        <td>{{ item.index + 1 }}</td>
+        <td>
+          <span *ngIf="!is_edit">
+            {{ item.user }}
+          </span>
+          <span *ngIf="is_edit">
+            <input
+              class="input-section"
+              type="text"
+              [(ngModel)]="item.user"
+              class="input-feilds"
+            />
+          </span>
+        </td>
+        <td>
+          <button class="button" *ngIf="!is_edit" (click)="edit(item.index)">
+            Edit
+          </button>
+          <button class="button" *ngIf="is_edit" (click)="is_edit = false">
+            Save
+          </button>
+          <button class="button" (click)="remove(item.index)">Delete</button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
