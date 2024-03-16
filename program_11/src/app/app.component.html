@@ -6,9 +6,8 @@
   </h1>
 
   <div>
-    {{ name | uppercase }}
+    default - {{ name }} inbuilt filter - {{ name | uppercase }}
 
-    {{ name | convertToUpper }}
-
+    pipe filter - {{ name | convertToUpper }}
   </div>
 </div>
