@@ -5,24 +5,10 @@
     the program.
   </h1>
 
-  <table class="">
-    <thead>
-      <tr>
-        <th>#</th>
-        <th>Name</th>
-        <th>USN</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr *ngFor="let item of student_list; index as i">
-        <td>{{ i + 1 }}</td>
-        <td>
-          {{ item.name | uppercase }}
-        </td>
-        <td>
-          {{ item.usn | convertToUpper }}
-        </td>
-      </tr>
-    </tbody>
-  </table>
+  <div>
+    {{ name | uppercase }}
+
+    {{ name | convertToUpper }}
+
+  </div>
 </div>
